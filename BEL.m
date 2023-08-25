@@ -11,12 +11,14 @@ n = numel(data)-depth;
 data_input=zeros(n,depth);
 target=zeros(n,1);
 output=zeros(n,1);
+
 for i =1:size(data,1)-depth
     for j = 1: depth
         data_input(i,j)=data(i+j-1);
     end
     target(i,1)=data(i+depth);
 end
+
 data=data_input;
 epoch=100;
 number_train=round(0.75*n);
