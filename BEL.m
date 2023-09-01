@@ -27,6 +27,7 @@ number_test=n-number_train;
 eta=0.1;
 eta_m=0.1;
 rew=2;
+
 vi=unifrnd(-1,1,[1,2]);
 wi=unifrnd(-1,1,[1,2]);
 Ai=unifrnd(-1,1,[1,2]);
