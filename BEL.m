@@ -4,6 +4,7 @@ clear all;
 close all;
 
 data=xlsread('LORRENZ.xlsx');
+
 data = (data - min(data))/(max(data)-min(data));
 data1=data;
 depth = 2;
